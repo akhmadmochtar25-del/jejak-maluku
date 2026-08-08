@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jejak Maluku | Cerita, Wisata & Kreativitas Maluku</title>
+
+    <meta name="description" content="Jejak Maluku - Cerita Maluku, wisata, UMKM, video promosi dan animasi.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #064e3b, #087f5b);
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background:
+                linear-gradient(rgba(0, 50, 35, 0.78), rgba(0, 70, 50, 0.78)),
+                url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 8vw, 76px);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            margin: 6px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #065f46;
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 70px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #667085;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 22px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-box p {
+            color: #667085;
+            font-size: 16px;
+        }
+
+        .contact {
+            background: #064e3b;
+            color: white;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px auto 25px;
+            max-width: 650px;
+        }
+
+        footer {
+            background: #022c22;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌴 JEJAK MALUKU</div>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+
+<section class="hero" id="beranda">
+
+    <div class="hero-content">
+
+        <h1>JEJAK MALUKU</h1>
+
+        <h2>Cerita • Kreativitas • Maluku</h2>
+
+        <p>
+            Mengabadikan cerita, budaya, wisata dan potensi Maluku
+            melalui video kreatif, animasi dan media digital.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#layanan" class="btn btn-primary">
+                Lihat Layanan
+            </a>
+
+            <a href="#kontak" class="btn btn-secondary">
+                Hubungi Kami
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="layanan">
+
+    <div class="section-title">
+
+        <h2>Layanan Jejak Maluku</h2>
+
+        <p>
+            Solusi kreatif untuk memperkenalkan produk dan potensi daerah.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🎬</div>
+
+            <h3>Jasa Video</h3>
+
+            <p>
+                Pembuatan video kreatif untuk kebutuhan promosi,
+                dokumentasi dan media sosial.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🏪</div>
+
+            <h3>Promosi UMKM</h3>
+
+            <p>
+                Membantu UMKM memperkenalkan produk melalui
+                konten digital yang menarik.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🌴</div>
+
+            <h3>Wisata Maluku</h3>
+
+            <p>
+                Memperkenalkan destinasi, budaya dan keindahan
+                Maluku melalui konten visual.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🎨</div>
+
+            <h3>Video Animasi</h3>
+
+            <p>
+                Membuat video animasi dan motion graphic
+                untuk berbagai kebutuhan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="tentang">
+
+    <div class="section-title">
+
+        <h2>Tentang Jejak Maluku</h2>
+
+    </div>
+
+    <div class="about-box">
+
+        <p>
+            Jejak Maluku adalah ruang kreatif digital yang mengangkat
+            cerita, sejarah, budaya, wisata dan potensi masyarakat Maluku.
+        </p>
+
+        <br>
+
+        <p>
+            Kami percaya bahwa setiap tempat memiliki cerita.
+            Melalui video, animasi dan media digital,
+            cerita tersebut dapat dikenal lebih luas.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="kontak">
+
+    <h2>Ingin Bekerja Sama?</h2>
+
+    <p>
+        Punya produk UMKM, tempat wisata atau membutuhkan
+        video promosi? Mari kita buat konten yang menarik bersama.
+    </p>
+
+    <a
+        href="https://wa.me/6280000000000"
+        class="btn btn-primary"
+        target="_blank">
+        💬 Hubungi via WhatsApp
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 Jejak Maluku.
+    Semua Hak Dilindungi.
+
+</footer>
+
+
+</body>
+</html>
