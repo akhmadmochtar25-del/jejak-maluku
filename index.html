@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jejak Maluku | Cerita, Wisata & Kreativitas Maluku</title>
-
     <meta name="description" content="Jejak Maluku - Cerita Maluku, wisata, UMKM, video promosi dan animasi.">
 
     <style>
@@ -32,6 +31,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.12);
         }
 
         .logo {
@@ -166,6 +166,69 @@
             font-size: 14px;
         }
 
+        /* VIDEO DI BAWAH 4 LAYANAN */
+        .service-video {
+            max-width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .service-video-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .service-video-title h3 {
+            font-size: 28px;
+            color: #064e3b;
+            margin-bottom: 6px;
+        }
+
+        .service-video-title p {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .video-box {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .video-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-box video {
+            width: 100%;
+            height: 320px;
+            display: block;
+            object-fit: cover;
+            background: #000;
+        }
+
+        .video-info {
+            padding: 18px 20px 20px;
+        }
+
+        .video-info h4 {
+            color: #064e3b;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .video-info p {
+            color: #667085;
+            font-size: 14px;
+        }
+
         .about {
             background: white;
         }
@@ -200,6 +263,28 @@
             font-size: 14px;
         }
 
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            z-index: 999;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
         @media (max-width: 900px) {
             .cards {
                 grid-template-columns: repeat(2, 1fr);
@@ -215,12 +300,24 @@
                 grid-template-columns: 1fr;
             }
 
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
             section {
                 padding: 50px 5%;
             }
 
             .hero {
                 min-height: 80vh;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .video-box video {
+                height: 240px;
             }
         }
     </style>
@@ -239,13 +336,9 @@
     </nav>
 </header>
 
-
 <section class="hero" id="beranda">
-
     <div class="hero-content">
-
         <h1>JEJAK MALUKU</h1>
-
         <h2>Cerita • Kreativitas • Maluku</h2>
 
         <p>
@@ -254,103 +347,111 @@
         </p>
 
         <div class="buttons">
-
-            <a href="#layanan" class="btn btn-primary">
-                Lihat Layanan
-            </a>
-
-            <a href="#kontak" class="btn btn-secondary">
-                Hubungi Kami
-            </a>
-
+            <a href="#layanan" class="btn btn-primary">Lihat Layanan</a>
+            <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
         </div>
-
     </div>
-
 </section>
-
 
 <section id="layanan">
 
     <div class="section-title">
-
         <h2>Layanan Jejak Maluku</h2>
-
         <p>
             Solusi kreatif untuk memperkenalkan produk dan potensi daerah.
         </p>
-
     </div>
-
 
     <div class="cards">
 
         <div class="card">
-
             <div class="icon">🎬</div>
-
             <h3>Jasa Video</h3>
-
             <p>
                 Pembuatan video kreatif untuk kebutuhan promosi,
                 dokumentasi dan media sosial.
             </p>
-
         </div>
 
-
         <div class="card">
-
             <div class="icon">🏪</div>
-
             <h3>Promosi UMKM</h3>
-
             <p>
                 Membantu UMKM memperkenalkan produk melalui
                 konten digital yang menarik.
             </p>
-
         </div>
 
-
         <div class="card">
-
             <div class="icon">🌴</div>
-
             <h3>Wisata Maluku</h3>
-
             <p>
                 Memperkenalkan destinasi, budaya dan keindahan
                 Maluku melalui konten visual.
             </p>
-
         </div>
 
-
         <div class="card">
-
             <div class="icon">🎨</div>
-
             <h3>Video Animasi</h3>
-
             <p>
                 Membuat video animasi dan motion graphic
                 untuk berbagai kebutuhan.
             </p>
-
         </div>
 
     </div>
 
-</section>
+    <!-- VIDEO LANGSUNG DI BAWAH 4 LAYANAN -->
+    <div class="service-video">
 
+        <div class="service-video-title">
+            <h3>🎬 Video Jejak Maluku</h3>
+            <p>
+                Lihat beberapa video kreatif dan dokumentasi Jejak Maluku.
+            </p>
+        </div>
+
+        <div class="video-grid">
+
+            <div class="video-box">
+                <video controls preload="metadata">
+                    <source src="video1.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                </video>
+
+                <div class="video-info">
+                    <h4>🎬 Video Jejak Maluku</h4>
+                    <p>
+                        Cerita, wisata dan kehidupan masyarakat Maluku.
+                    </p>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <video controls preload="metadata">
+                    <source src="video2.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                </video>
+
+                <div class="video-info">
+                    <h4>🎬 Video Promosi</h4>
+                    <p>
+                        Video promosi untuk UMKM, wisata dan
+                        berbagai potensi daerah Maluku.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 
 <section class="about" id="tentang">
 
     <div class="section-title">
-
         <h2>Tentang Jejak Maluku</h2>
-
     </div>
 
     <div class="about-box">
@@ -372,7 +473,6 @@
 
 </section>
 
-
 <section class="contact" id="kontak">
 
     <h2>Ingin Bekerja Sama?</h2>
@@ -382,23 +482,26 @@
         video promosi? Mari kita buat konten yang menarik bersama.
     </p>
 
-  <a
-    href="https://wa.me/6281247425536"
-    class="btn btn-primary"
-    target="_blank">
-    💬 Hubungi via WhatsApp
-</a>
+    <a
+        href="https://wa.me/6281247425536"
+        class="btn btn-primary"
+        target="_blank">
+        💬 Hubungi via WhatsApp
+    </a>
 
 </section>
 
-
 <footer>
-
-    © 2026 Jejak Maluku.
-    Semua Hak Dilindungi.
-
+    © 2026 Jejak Maluku. Semua Hak Dilindungi.
 </footer>
 
+<a
+    href="https://wa.me/6281247425536"
+    class="whatsapp"
+    target="_blank"
+    aria-label="Hubungi Jejak Maluku melalui WhatsApp">
+    💬
+</a>
 
 </body>
 </html>
