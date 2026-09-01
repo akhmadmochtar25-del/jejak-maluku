@@ -10,8 +10,7 @@
 <meta name="description"
 content="Jejak Maluku Studio - Mengabadikan cerita Maluku melalui video, budaya, desa, UMKM, perusahaan dan instansi.">
 
-<meta name="theme-color" content="#0d3b66">
-    <meta name="color-scheme" content="light">
+<meta name="theme-color" content="#123d63">
 
 <title>Jejak Maluku Studio</title>
 
@@ -1092,536 +1091,10 @@ footer {
 }
 
 
-/* =========================================================
-   MODERN DESIGN OVERRIDES — JEJAK MALUKU STUDIO
-   ========================================================= */
-
-:root {
-    --biru: #0d3b66;
-    --biru-gelap: #082943;
-    --emas: #d99a21;
-    --emas-muda: #fff5dc;
-    --putih: #ffffff;
-    --abu: #667085;
-    --abu-muda: #f4f7fa;
-    --border: #e4eaf0;
-    --shadow: 0 18px 50px rgba(13,59,102,.10);
-    --shadow-hover: 0 28px 70px rgba(13,59,102,.16);
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 88px;
-}
-
-body {
-    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, Arial, Helvetica, sans-serif;
-    background: #f8fafc;
-    color: #172033;
-    line-height: 1.7;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background: rgba(255,255,255,.88);
-    backdrop-filter: blur(18px) saturate(150%);
-    -webkit-backdrop-filter: blur(18px) saturate(150%);
-    border-bottom: 1px solid rgba(228,234,240,.8);
-    box-shadow: 0 5px 25px rgba(13,59,102,.04);
-}
-
-.navbar {
-    min-height: 82px;
-}
-
-.logo {
-    font-size: 21px;
-    letter-spacing: .2px;
-}
-
-.nav-menu {
-    gap: 8px;
-}
-
-.nav-menu a {
-    position: relative;
-    display: block;
-    padding: 10px 13px;
-    border-radius: 10px;
-    color: #475467;
-    font-size: 14px;
-    font-weight: 750;
-}
-
-.nav-menu a:hover {
-    color: var(--biru);
-    background: #f1f6fa;
-}
-
-.nav-menu a::after {
-    content: "";
-    position: absolute;
-    left: 13px;
-    right: 13px;
-    bottom: 5px;
-    height: 2px;
-    border-radius: 99px;
-    background: var(--emas);
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform .25s ease;
-}
-
-.nav-menu a:hover::after {
-    transform: scaleX(1);
-}
-
-section {
-    padding: 100px 0;
-}
-
-.hero {
-    position: relative;
-    min-height: 690px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    background:
-        radial-gradient(circle at 82% 18%, rgba(217,154,33,.18), transparent 24%),
-        radial-gradient(circle at 100% 100%, rgba(13,59,102,.10), transparent 34%),
-        linear-gradient(135deg, #eef7ff 0%, #ffffff 55%, #fffaf0 100%);
-}
-
-.hero::before,
-.hero::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.hero::before {
-    width: 420px;
-    height: 420px;
-    right: -170px;
-    top: -170px;
-    border: 1px solid rgba(13,59,102,.10);
-    box-shadow: 0 0 0 55px rgba(13,59,102,.025),
-                0 0 0 110px rgba(13,59,102,.018);
-}
-
-.hero::after {
-    width: 180px;
-    height: 180px;
-    left: -100px;
-    bottom: -90px;
-    background: rgba(217,154,33,.08);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 850px;
-}
-
-.hero-badge {
-    padding: 9px 16px;
-    border: 1px solid rgba(217,154,33,.25);
-    background: rgba(255,245,220,.8);
-    color: #8b620c;
-    box-shadow: 0 8px 24px rgba(217,154,33,.08);
-}
-
-.hero h1 {
-    max-width: 850px;
-    font-size: clamp(44px, 6.5vw, 76px);
-    letter-spacing: -2.5px;
-    line-height: 1.03;
-    margin-bottom: 25px;
-}
-
-.hero h1 span {
-    position: relative;
-    color: var(--emas);
-}
-
-.hero h1 span::after {
-    content: "";
-    position: absolute;
-    left: 2px;
-    right: 3px;
-    bottom: -5px;
-    height: 7px;
-    border-radius: 99px;
-    background: rgba(217,154,33,.16);
-    z-index: -1;
-}
-
-.hero p {
-    max-width: 720px;
-    color: #596579;
-    font-size: 18px;
-    line-height: 1.85;
-}
-
-.hero-buttons {
-    gap: 14px;
-}
-
-.btn {
-    min-height: 50px;
-    padding: 13px 22px;
-    border-radius: 12px;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, #0d3b66, #145687);
-    box-shadow: 0 12px 28px rgba(13,59,102,.20);
-}
-
-.btn-primary:hover {
-    background: linear-gradient(135deg, #082943, #0d3b66);
-    transform: translateY(-3px);
-    box-shadow: 0 16px 32px rgba(13,59,102,.24);
-}
-
-.btn-secondary {
-    background: rgba(255,255,255,.8);
-    border: 1px solid #d9e2ea;
-    box-shadow: 0 8px 20px rgba(13,59,102,.05);
-}
-
-.section-heading {
-    max-width: 760px;
-    margin-bottom: 58px;
-}
-
-.section-heading h2 {
-    font-size: clamp(31px, 4vw, 42px);
-    letter-spacing: -.8px;
-}
-
-.section-heading p {
-    color: #667085;
-    line-height: 1.75;
-}
-
-.services {
-    background: #ffffff;
-}
-
-.services-grid {
-    gap: 22px;
-}
-
-.service-card {
-    position: relative;
-    min-height: 350px;
-    padding: 30px 25px;
-    border: 1px solid #e5ebf0;
-    border-radius: 22px;
-    box-shadow: 0 12px 35px rgba(13,59,102,.07);
-    overflow: hidden;
-}
-
-.service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--biru), var(--emas));
-    transform: scaleX(.25);
-    transform-origin: left;
-    transition: transform .35s ease;
-}
-
-.service-card:hover::before {
-    transform: scaleX(1);
-}
-
-.service-card:hover {
-    transform: translateY(-9px);
-    box-shadow: var(--shadow-hover);
-    border-color: #d8e4ec;
-}
-
-.service-icon {
-    width: 62px;
-    height: 62px;
-    border-radius: 17px;
-    background: linear-gradient(135deg, #fff7e3, #fff0c9);
-    border: 1px solid rgba(217,154,33,.18);
-    box-shadow: 0 8px 20px rgba(217,154,33,.10);
-}
-
-.service-card h3 {
-    font-size: 19px;
-    letter-spacing: -.2px;
-}
-
-.service-card p {
-    color: #667085;
-}
-
-.card-btn {
-    min-height: 46px;
-    border-radius: 11px;
-    background: #0d3b66;
-}
-
-.card-btn:hover {
-    background: var(--emas);
-}
-
-.video-section {
-    background:
-        radial-gradient(circle at 0 0, rgba(13,59,102,.06), transparent 28%),
-        #f4f7fa;
-}
-
-.video-grid {
-    gap: 28px;
-}
-
-.video-card {
-    border: 1px solid #e2e9ef;
-    border-radius: 22px;
-    box-shadow: 0 15px 40px rgba(13,59,102,.09);
-}
-
-.video-card:hover {
-    transform: translateY(-7px);
-    box-shadow: var(--shadow-hover);
-}
-
-.video-frame {
-    background: #0b1117;
-}
-
-.video-info {
-    padding: 22px 24px 24px;
-}
-
-.video-info h3 {
-    font-size: 19px;
-    letter-spacing: -.2px;
-}
-
-.video-info p {
-    color: #667085;
-}
-
-.social-section {
-    background: #ffffff;
-}
-
-.social-grid {
-    gap: 24px;
-}
-
-.social-card {
-    position: relative;
-    padding: 32px;
-    border-radius: 22px;
-    border: 1px solid #e4eaf0;
-    box-shadow: 0 12px 35px rgba(13,59,102,.07);
-    overflow: hidden;
-}
-
-.social-card::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    right: -55px;
-    top: -55px;
-    border-radius: 50%;
-    background: rgba(217,154,33,.08);
-}
-
-.social-card h3,
-.social-card p,
-.social-card a {
-    position: relative;
-    z-index: 1;
-}
-
-.about {
-    background: linear-gradient(135deg, #f3f8fc 0%, #ffffff 65%, #fffaf1 100%);
-}
-
-.about-grid {
-    gap: 38px;
-}
-
-.about-box {
-    padding: 38px;
-    border-radius: 24px;
-    border: 1px solid #e1e9ef;
-    box-shadow: 0 15px 45px rgba(13,59,102,.08);
-}
-
-.about-box h2,
-.about-box h3 {
-    letter-spacing: -.7px;
-}
-
-.about-list li {
-    padding: 10px 0;
-}
-
-.about-list li::before {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background: var(--emas-muda);
-    font-size: 12px;
-}
-
-.contact {
-    position: relative;
-    overflow: hidden;
-    background:
-        radial-gradient(circle at 15% 20%, rgba(255,255,255,.08), transparent 25%),
-        radial-gradient(circle at 90% 90%, rgba(217,154,33,.16), transparent 30%),
-        linear-gradient(135deg, #0d3b66, #082943);
-}
-
-.contact::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 320px;
-    right: -140px;
-    top: -140px;
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: 50%;
-    box-shadow: 0 0 0 45px rgba(255,255,255,.025);
-}
-
-.contact-content {
-    position: relative;
-    z-index: 1;
-}
-
-.contact-content h2 {
-    font-size: clamp(32px, 5vw, 46px);
-    letter-spacing: -1px;
-}
-
-.contact-buttons .btn-primary {
-    background: #ffffff;
-    color: var(--biru);
-}
-
-.contact-buttons .btn-primary:hover {
-    background: var(--emas);
-    color: #ffffff;
-}
-
-footer {
-    background: #061f34;
-}
-
-.footer-logo {
-    letter-spacing: .2px;
-}
-
-/* Better keyboard accessibility */
-a:focus-visible {
-    outline: 3px solid rgba(217,154,33,.55);
-    outline-offset: 3px;
-    border-radius: 8px;
-}
-
-/* Mobile refinement */
-@media (max-width: 700px) {
-    header {
-        position: sticky;
-    }
-
-    .navbar {
-        min-height: auto;
-        padding: 14px 0 16px;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    .nav-menu {
-        gap: 3px 5px;
-    }
-
-    .nav-menu a {
-        padding: 8px 9px;
-        font-size: 12.5px;
-    }
-
-    .nav-menu a::after {
-        display: none;
-    }
-
-    section {
-        padding: 72px 0;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 82px 0 78px;
-    }
-
-    .hero h1 {
-        font-size: clamp(40px, 12vw, 52px);
-        letter-spacing: -1.8px;
-    }
-
-    .hero p {
-        font-size: 16px;
-        line-height: 1.75;
-    }
-
-    .hero-buttons {
-        gap: 10px;
-    }
-
-    .section-heading {
-        margin-bottom: 38px;
-    }
-
-    .service-card,
-    .social-card,
-    .about-box {
-        border-radius: 19px;
-    }
-
-    .service-card {
-        min-height: 320px;
-        padding: 26px 22px;
-    }
-
-    .video-card {
-        border-radius: 19px;
-    }
-
-    .video-info {
-        padding: 19px 19px 21px;
-    }
-
-    .about-box {
-        padding: 27px 23px;
-    }
-}
-
+/* WhatsApp modern CTA */
+.btn-whatsapp{background:#1fa855;color:#fff;border:1px solid #1fa855;box-shadow:0 10px 24px rgba(31,168,85,.18);transition:.25s}
+.btn-whatsapp:hover{background:#168b45;border-color:#168b45;color:#fff;transform:translateY(-3px);box-shadow:0 15px 30px rgba(31,168,85,.24)}
+@media(max-width:700px){.hero-buttons .btn-whatsapp{width:100%}}
 </style>
 
 </head>
@@ -1742,6 +1215,8 @@ a:focus-visible {
     💬 Hubungi Saya
 
 </a>
+
+<a href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 Chat WhatsApp</a>
 
 </div>
 
@@ -2013,11 +1488,11 @@ allowfullscreen>
 <div class="video-info">
 
 <h3>
-    Video Iklan Kuliner
+    Jejak Maluku
 </h3>
 
 <p>
-    Sajian visual estetik dan menggugah selera untuk meningkatkan daya tarik produk kuliner dan restoran Anda.
+    Cerita dan perjalanan dari Maluku.
 </p>
 
 </div>
@@ -2054,11 +1529,11 @@ allowfullscreen>
 <div class="video-info">
 
 <h3>
-    Promosi & Iklan Produk
+    Cerita Maluku
 </h3>
 
 <p>
-    Solusi video kreaktif untuk meningkatkan nilai jual dan daya tarik produk bisnis anda.
+    Mengenal lebih dekat cerita dan kehidupan Maluku.
 </p>
 
 </div>
@@ -2095,11 +1570,11 @@ allowfullscreen>
 <div class="video-info">
 
 <h3>
-    Portofolio Media Kreatif
+    Budaya &amp; Kehidupan Maluku
 </h3>
 
 <p>
-    Membantu bisnis kuliner hingga fasilitas publik dalam menyajikan informasi yang jelas, rapi, dan mudah dipahami.
+    Menyimpan cerita, budaya dan kehidupan masyarakat Maluku.
 </p>
 
 </div>
@@ -2136,11 +1611,11 @@ allowfullscreen>
 <div class="video-info">
 
 <h3>
-    Animasi & Informasi Visual
+    Jejak Maluku Studio
 </h3>
 
 <p>
-    Penyampaian pesan, edukasi, dan tata cara pelayanan yang dikemas menarik melalui animasi propesional.
+    Saksikan karya dan cerita Jejak Maluku Studio.
 </p>
 
 </div>
@@ -2214,7 +1689,7 @@ rel="noopener noreferrer"
 
 class="btn btn-secondary">
 
-    Lihat Channel YouTube
+    Kunjungi YouTube
 
 </a>
 
@@ -2251,7 +1726,7 @@ rel="noopener noreferrer"
 
 class="btn btn-secondary">
 
-    Lihat TikTok
+    Kunjungi TikTok
 
 </a>
 
@@ -2402,6 +1877,9 @@ class="btn btn-secondary">
 
 
 <div class="contact-buttons">
+
+<a href="https://wa.me/6281247425536?text=Halo%20Jejak%20Maluku%20Studio%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20yang%20tersedia." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 Chat WhatsApp</a>
+
 
 
 <!-- AJUKAN PROYEK -->
